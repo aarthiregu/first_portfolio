@@ -1,0 +1,27 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: "Young Serif", serif;
+}
+.section-one{
+    background-color:black;
+    color:white;
+    padding:20px;
+    margin:10px;
+}
+.section-one__name,.section-one__desc{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+.section-two{
+    display: flex;        /* put images in a row */
+    justify-content: center;
+    gap: 10px;            /* space between images */
+    width: 300px;         /* set equal width */
+    height: 200px;        /* set equal height */
+    object-fit: cover;    /* crop nicely if sizes differ */
+  }
+
