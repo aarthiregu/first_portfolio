@@ -2,26 +2,100 @@
     padding:0;
     margin:0;
 }
-body{
-    font-family: "Young Serif", serif;
+.section{
+background-color:black ;
+text-align:center;
+color:white;
+}
+nav{
+    font-weight:bold;
+    color:white;
+    padding:5px;
+}
+li,ul{
+    display:inline;
+}
+li{
+    color:grey;
+}
+li:hover{
+    color:white;
+    cursor:pointer;
 }
 .section-one{
+    text-align:center;
+}
+.box{
+    border-color:black;
+    border-width: 2px;
+    border-style:solid;
+    padding:15px;
+    border-radius: 8px;
+    width: 200px;
+    height:430px;
+    text-align:center;
+}
+
+.box img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;       /* crop image nicely to fit */
+    border-radius: 8px; 
+}
+.box h2{
+    margin:10px 0 5px;
+    color:black;
+}
+.box p{
+    font-size:15px;
+    color:black;
+    margin:10px 0 5px;
+}
+.box button{
     background-color:black;
     color:white;
-    padding:20px;
-    margin:10px;
+    border:none;
+    padding:8px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
 }
-.section-one__name,.section-one__desc{
-    background-color: black;
-    color:white;
-    text-align: center;
-}
-.section-two{
-    display: flex;        /* put images in a row */
+    .box button:hover{
+        background-color:orange;
+
+    }
+
+.dishes{
+    background-color:white;
+    display: flex;
     justify-content: center;
-    gap: 10px;            /* space between images */
-    width: 300px;         /* set equal width */
-    height: 200px;        /* set equal height */
-    object-fit: cover;    /* crop nicely if sizes differ */
-  }
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.contact{
+    background-color:black;
+    margin:20px;
+    text-align: center;
+    color:white;
+}
+.contact h2{
+    
+    font-family: sans-serif;
+}
+.contact form{
+    display:flex;
+    flex-direction:column;
+    width:200px;
+    margin:0 auto;
+}
+.contact input,.contact button{
+    background-color:white;
+    cursor:pointer;
+    font-weight:bold;
+
+}
+.contact button:hover{
+    background-color: orange;
+}
 
